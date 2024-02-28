@@ -24,7 +24,7 @@ public class IngestAll {
 
     public void execute() {
 //        read all
-        extractorService.extractMetadata();
+        extractorService.extractMetadata(this.source);
 //        ingest
         indexService.index();
     }
